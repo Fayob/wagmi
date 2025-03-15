@@ -21,7 +21,7 @@ function App() {
   const { connect, connectors, error: connectError } = useConnect();
   const { disconnect } = useDisconnect();
   const { data: balance } = useBalance({ address });
-  const { signMessage } = useSignMessage({ message: 'Hello, Web3!' });
+  const { signMessage } = useSignMessage();
   const { sendTransaction } = useSendTransaction();
   const { switchChain } = useSwitchChain();
 
@@ -112,7 +112,7 @@ function App() {
 
           <div className="button-grid">
               <button
-                onClick={() => signMessage()}
+                onClick={() => signMessage({ message: "Hello Web3"})}
                 className="connect-button"
               >
                 Sign Message
