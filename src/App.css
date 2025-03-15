@@ -40,3 +40,196 @@
 .read-the-docs {
   color: #888;
 }
+
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 480px;
+  padding: 20px;
+}
+
+.app-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  text-align: center;
+}
+
+.app-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 24px;
+}
+
+.connected-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.info-section {
+  margin-bottom: 16px;
+}
+
+.info-label {
+  font-size: 16px;
+  color: #6b7280;
+  margin-bottom: 4px;
+}
+
+.info-value {
+  font-size: 18px;
+  color: #1f2937;
+  font-family: 'Courier New', monospace;
+  word-break: break-all;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.action-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.action-button.green {
+  background: #10b981;
+}
+
+.action-button.green:hover {
+  background: #059669;
+}
+
+.action-button.purple {
+  background: #8b5cf6;
+}
+
+.action-button.purple:hover {
+  background: #7c3aed;
+}
+
+.action-button.yellow {
+  background: #f59e0b;
+}
+
+.action-button .yellow:hover {
+  background: #d97706;
+}
+
+.action-button .blue {
+  background: #0b1bf5;
+}
+
+.action-button .blue:hover {
+  background: #597ef4;
+}
+
+.action-button.red {
+  background: #ef4444;
+}
+
+.action-button.red:hover {
+  background: #dc2626;
+}
+
+.connect-button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  background: #3b82f6;
+  margin: 2px 0;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.connect-button:hover {
+  background: #2563eb;
+}
+
+.error-message {
+  color: #ef4444;
+  font-size: 14px;
+  margin-top: 16px;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.modal-container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 20px;
+}
+
+.modal-panel {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.modal-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 16px;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.wallet-button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  background: #e5e7eb;
+  color: #1f2937;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.wallet-button:hover {
+  background: #d1d5db;
+}
