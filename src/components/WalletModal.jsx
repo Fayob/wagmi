@@ -1,7 +1,6 @@
 import { Dialog, DialogPanel, DialogTitle, Transition, TransitionChild } from '@headlessui/react';
 import { Fragment } from 'react';
 
-import { injected, walletConnect, coinbaseWallet } from 'wagmi/connectors';
 
 function WalletModal({ isOpen, onClose, connectors, connect }) {
   return (
