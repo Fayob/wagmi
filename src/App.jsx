@@ -11,8 +11,8 @@ import {
   useReadContract,
 } from 'wagmi';
 import { parseAbi } from 'viem';
-import WalletModal from './components/WalletModal';
 import "./App.css"
+import Modal from './components/Modal';
 
 
 function App() {
@@ -172,13 +172,13 @@ function App() {
       )}
 
       </div>
-      
-        <WalletModal
-          isOpen={isWalletModalOpen}
-          onClose={() => setIsWalletModalOpen(false)}
-          connectors={connectors}
-          connect={connect}
-        />
+
+      <Modal 
+        isOpen={isWalletModalOpen}
+        onClose={() => setIsWalletModalOpen(false)}
+        connectors={connectors}
+        connect={connect}
+      />
 
       {result && <p><strong>{result}</strong></p>}
 
